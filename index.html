@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skeleton Loading</title>
+
+	<style>
+		.card {
+			width:  250px;
+			height:  150px;
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border:  1px solid gray;
+		}
+
+		.card-skeleton {
+			background-image: linear-gradient(90deg, #ccc, 0px, rgb(229 229 229 / 90%) 40px, #ccc 80px);
+			background-size: 300%;
+			background-position: 100% 0;
+			border-radius: inherit;
+			animation: shimmer 1.5s infinite;
+		}
+
+		.title {
+			height: 15px;
+			margin-bottom: 15px;
+		}
+
+		.description {
+			height: 100px;
+		}
+
+		@keyframes shimmer{
+			to {
+				background-position: -100% 0;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="card">
+		<div class="card-skeleton title"></div>
+		<div class="card-skeleton description"></div>
+	</div>
+
+</body>
+</html>
